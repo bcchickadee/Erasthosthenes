@@ -4,10 +4,11 @@ while True:
     n=int(input('자연수를 입력하십시오: '))
   except ValueError:
     print('\n오류: 자연수를 입력하십시오.\n')
-  if n<=0:
-    print('\n오류: 자연수를 입력하십시오.\n')
   else:
-    break
+    if n<=0:
+      print('\n오류: 자연수를 입력하십시오.\n')
+    else:
+      break
 
 Nums=[]
 for i in range(1, n):
